@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search engine clone</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="greetings">
+                <h1 class="mjr">Let's Search!</h1>
+            </div>
+            <nav class="nav">
+                <div class="search_bdr">
+                    <label for="search_fld_id" type="button" class="search_icon_bdr search_go_btn" title="Search">
+                        <div class="search_icon_box">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="search_icon_svg">
+                                <path fill-rule="evenodd" d="M11 2.75a8.25 8.25 0 1 0 0 16.5a8.25 8.25 0 0 0 0-16.5M1.25 11c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75s-4.365 9.75-9.75 9.75S1.25 16.385 1.25 11m18.908 8.751a.38.38 0 0 0-.407.407c0 .001.004.027.024.1c.022.084.056.197.108.37c.047.158.078.26.103.336c.026.078.035.093.031.086a.38.38 0 0 0 .544.137c-.007.004.008-.005.067-.06c.059-.056.134-.131.251-.248s.192-.192.247-.25c.047-.05.06-.069.062-.07a.38.38 0 0 0-.137-.541c-.001 0-.022-.01-.087-.032a13 13 0 0 0-.336-.103a15 15 0 0 0-.37-.108a1 1 0 0 0-.1-.024m-1.902.532a1.88 1.88 0 0 1 2.027-2.027c.2.017.442.09.703.168l.072.022l.065.02c.24.07.465.138.635.229a1.88 1.88 0 0 1 .68 2.694c-.107.16-.273.326-.45.503l-.048.048l-.048.048c-.177.177-.343.343-.503.45a1.88 1.88 0 0 1-2.694-.68c-.091-.17-.158-.395-.23-.635l-.02-.065l-.02-.072c-.08-.26-.152-.503-.169-.703" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </label>
+                    <div class="search_box">
+                        <input type="text" inputmode="search" name="search_fld" id="search_fld_id" class="search_fld_cls" placeholder="Search anything">
+                    </div>
+                    <label for="search_fld_id" type="button" class="search_icon_bdr search_clr_btn" title="Clear search field">
+                        <div class="search_icon_box">
+                            <svg transform="scale(0.75)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="search_icon_svg">
+                                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                            </svg>
+                        </div>
+                    </label>
+                    <label for="filter_tgl_id" type="button" class="search_icon_bdr" title="Quick Settings">
+                        <div class="search_icon_box">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="search_icon_svg">
+                                <g fill-rule="evenodd" clip-rule="evenodd">
+                                    <path d="M12 8.25a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5M9.75 12a2.25 2.25 0 1 1 4.5 0a2.25 2.25 0 0 1-4.5 0" />
+                                    <path d="M11.975 1.25c-.445 0-.816 0-1.12.02a2.8 2.8 0 0 0-.907.19a2.75 2.75 0 0 0-1.489 1.488c-.145.35-.184.72-.2 1.122a.87.87 0 0 1-.415.731a.87.87 0 0 1-.841-.005c-.356-.188-.696-.339-1.072-.389a2.75 2.75 0 0 0-2.033.545a2.8 2.8 0 0 0-.617.691c-.17.254-.356.575-.578.96l-.025.044c-.223.385-.408.706-.542.98c-.14.286-.25.568-.29.88a2.75 2.75 0 0 0 .544 2.033c.231.301.532.52.872.734a.87.87 0 0 1 .426.726a.87.87 0 0 1-.426.726c-.34.214-.64.433-.872.734a2.75 2.75 0 0 0-.545 2.033c.041.312.15.594.29.88c.135.274.32.595.543.98l.025.044c.222.385.408.706.578.96c.177.263.367.5.617.69a2.75 2.75 0 0 0 2.033.546c.376-.05.716-.2 1.072-.389a.87.87 0 0 1 .84-.005a.86.86 0 0 1 .417.731c.015.402.054.772.2 1.122a2.75 2.75 0 0 0 1.488 1.489c.29.12.59.167.907.188c.304.021.675.021 1.12.021h.05c.445 0 .816 0 1.12-.02c.318-.022.617-.069.907-.19a2.75 2.75 0 0 0 1.489-1.488c.145-.35.184-.72.2-1.122a.87.87 0 0 1 .415-.732a.87.87 0 0 1 .841.006c.356.188.696.339 1.072.388a2.75 2.75 0 0 0 2.033-.544c.25-.192.44-.428.617-.691c.17-.254.356-.575.578-.96l.025-.044c.223-.385.408-.706.542-.98c.14-.286.25-.569.29-.88a2.75 2.75 0 0 0-.544-2.033c-.231-.301-.532-.52-.872-.734a.87.87 0 0 1-.426-.726c0-.278.152-.554.426-.726c.34-.214.64-.433.872-.734a2.75 2.75 0 0 0 .545-2.033a2.8 2.8 0 0 0-.29-.88a18 18 0 0 0-.543-.98l-.025-.044a18 18 0 0 0-.578-.96a2.8 2.8 0 0 0-.617-.69a2.75 2.75 0 0 0-2.033-.546c-.376.05-.716.2-1.072.389a.87.87 0 0 1-.84.005a.87.87 0 0 1-.417-.731c-.015-.402-.054-.772-.2-1.122a2.75 2.75 0 0 0-1.488-1.489c-.29-.12-.59-.167-.907-.188c-.304-.021-.675-.021-1.12-.021zm-1.453 1.595c.077-.032.194-.061.435-.078c.247-.017.567-.017 1.043-.017s.796 0 1.043.017c.241.017.358.046.435.078c.307.127.55.37.677.677c.04.096.073.247.086.604c.03.792.439 1.555 1.165 1.974s1.591.392 2.292.022c.316-.167.463-.214.567-.227a1.25 1.25 0 0 1 .924.247c.066.051.15.138.285.338c.139.206.299.483.537.895s.397.69.506.912c.107.217.14.333.15.416a1.25 1.25 0 0 1-.247.924c-.064.083-.178.187-.48.377c-.672.422-1.128 1.158-1.128 1.996s.456 1.574 1.128 1.996c.302.19.416.294.48.377c.202.263.29.595.247.924c-.01.083-.044.2-.15.416c-.109.223-.268.5-.506.912s-.399.689-.537.895c-.135.2-.219.287-.285.338a1.25 1.25 0 0 1-.924.247c-.104-.013-.25-.06-.567-.227c-.7-.37-1.566-.398-2.292.021s-1.135 1.183-1.165 1.975c-.013.357-.046.508-.086.604a1.25 1.25 0 0 1-.677.677c-.077.032-.194.061-.435.078c-.247.017-.567.017-1.043.017s-.796 0-1.043-.017c-.241-.017-.358-.046-.435-.078a1.25 1.25 0 0 1-.677-.677c-.04-.096-.073-.247-.086-.604c-.03-.792-.439-1.555-1.165-1.974s-1.591-.392-2.292-.022c-.316.167-.463.214-.567.227a1.25 1.25 0 0 1-.924-.247c-.066-.051-.15-.138-.285-.338a17 17 0 0 1-.537-.895c-.238-.412-.397-.69-.506-.912c-.107-.217-.14-.333-.15-.416a1.25 1.25 0 0 1 .247-.924c.064-.083.178-.187.48-.377c.672-.422 1.128-1.158 1.128-1.996s-.456-1.574-1.128-1.996c-.302-.19-.416-.294-.48-.377a1.25 1.25 0 0 1-.247-.924c.01-.083.044-.2.15-.416c.109-.223.268-.5.506-.912s.399-.689.537-.895c.135-.2.219-.287.285-.338a1.25 1.25 0 0 1 .924-.247c.104.013.25.06.567.227c.7.37 1.566.398 2.292-.022c.726-.419 1.135-1.182 1.165-1.974c.013-.357.046-.508.086-.604c.127-.307.37-.55.677-.677" />
+                                </g>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+                <div class="filter_base">
+                    <div class="filter_bcg">
+                        <div class="filter_bdr">
+                            <span class="filter_title">Search using:</span>
+                            <div class="filter_box">
+                                <button class="filter_item search_engine selected" data-url="https://search.brave.com/search?q=">
+                                    <span class="filter_txt">Brave (default)</span>
+                                </button>
+                                <button class="filter_item search_engine" data-url="https://duckduckgo.com/?q=">
+                                    <span class="filter_txt">DuckDuckGo</span>
+                                </button>
+                                <button class="filter_item search_engine" data-url="https://www.ecosia.org/search?tt=346fadac&q=">
+                                    <span class="filter_txt">Ecosia</span>
+                                </button>
+                                <button class="filter_item search_engine" data-url="https://www.qwant.com/?q=">
+                                    <span class="filter_txt">Qwant</span>
+                                </button>
+                                <button class="filter_item search_engine" data-url="https://www.startpage.com/do/search?q=">
+                                    <span class="filter_txt">Startpage</span>
+                                </button>
+                            </div>
+                            <span class="filter_title">Open Search in:</span>
+                            <div class="filter_box">
+                                <button class="filter_item search_dstn selected" data-opener="current">
+                                    <span class="filter_txt">This tab (default)</span>
+                                </button>
+                                <button class="filter_item search_dstn" data-opener="next">
+                                    <span class="filter_txt">New tab</span>
+                                </button>
+                                <button class="filter_item search_dstn" data-opener="new">
+                                    <span class="filter_txt">New window</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="checkbox" name="filter_tgl_inp" id="filter_tgl_id" class="filter_tgl_cls">
+            </nav>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
