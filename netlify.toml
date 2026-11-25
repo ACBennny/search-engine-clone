@@ -1,5 +1,5 @@
 [[redirects]]
   from = "https://ac-search-engine-clone.netlify.app/*"
-  to = "https://lets-search.abc-x.top/:splat"
+  to = "https://lets-search.abcx.fyi/:splat"
   status = 301
   force = true
